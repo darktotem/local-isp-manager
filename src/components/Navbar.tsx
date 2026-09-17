@@ -1,0 +1,1 @@
+//Global Navigation Bar with (logo, navigation links[Get Connected, about, contact], and user profile options [login, signup])
