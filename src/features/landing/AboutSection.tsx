@@ -46,7 +46,7 @@ export const AboutSection = () => {
               Our mission is to close the digital divide by delivering fast, uninterrupted, and affordable fiber optic internet to homes and enterprise businesses.
             </p>
             <p className="about-description">
-              We engineer scalable network infrastructure built for high bandwidth demand—ensuring low latency for remote work, HD media streaming, online learning, and cloud application access.
+              We engineer scalable network infrastructure built for high bandwidth demand, ensuring low latency for remote work, HD media streaming, online learning, and cloud application access.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export const AboutSection = () => {
               <div className="media-overlay-gradient" />
               <div className="media-badge-tag">Network Hub</div>
               <div className="media-placeholder-content">
-                <span className="media-icon">📡</span>
+                <span className="media-icon"></span>
                 <p>Fiber Infrastructure Visual Placeholder</p>
               </div>
             </div>

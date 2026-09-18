@@ -52,7 +52,7 @@ export const Packages = () => {
                   fullWidth
                   pill
                 >
-                  Get started
+                  Get Connected
                 </Button>
               </div>
             </div>
