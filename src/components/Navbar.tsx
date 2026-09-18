@@ -1,25 +1,21 @@
 
 //Global Navigation Bar with (logo, navigation links[Get Connected, about, contact], and user profile options [login, signup]
 import { useState } from 'react';
+import '../styles/Navbar.css';
 
-export const Navbar = () => {
+export const Navbar = () => {   
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className="navbar-header">
       <nav className="navbar-container">
-
-        {/* Brand / Logo Placeholder */}
+        {/* Brand / Logo */}
         <div className="nav-brand">
-          <a href="/" onClick={closeMenu}>
+          <a href="/" onClick={closeMenu} className="brand-link">
             <span className="brand-logo-icon">⚡</span>
             <span className="brand-name">Local Network</span>
           </a>
@@ -27,42 +23,41 @@ export const Navbar = () => {
 
         {/* Mobile Hamburger Button */}
         <button
-          className="hamburger-toggle"
+          className={`hamburger-toggle ${isMenuOpen ? 'is-active' : ''}`}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
         >
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
         </button>
 
-        {/* Navigation Links & CTA */}
+        {/* Navigation Links & Action CTA */}
         <div className={`nav-content ${isMenuOpen ? 'is-active' : ''}`}>
           <ul className="nav-links">
             <li>
-              <a href="#about" onClick={closeMenu}>
+              <a href="#about" className="nav-item-link" onClick={closeMenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="#packages" onClick={closeMenu}>
+              <a href="#packages" className="nav-item-link" onClick={closeMenu}>
                 Packages
               </a>
             </li>
             <li>
-              <a href="#coverage" onClick={closeMenu}>
+              <a href="#coverage" className="nav-item-link" onClick={closeMenu}>
                 Coverage
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={closeMenu}>
+              <a href="#contact" className="nav-item-link" onClick={closeMenu}>
                 Contact
               </a>
             </li>
           </ul>
 
-          {/* Static CTA Button */}
           <div className="nav-cta-wrapper">
             <a href="#packages" className="btn-get-connected" onClick={closeMenu}>
               Get Connected
@@ -73,3 +68,5 @@ export const Navbar = () => {
     </header>
   );
 };
+
+export default Navbar;

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pkg-10mbps",
+    "name": "Home Basic",
+    "speed": "10 Mbps",
+    "price": 2499,
+    "currency": "KSh",
+    "period": "month",
+    "popular": false,
+    "features": [
+      "Unlimited Data Usage",
+      "Ideal for SD/HD Streaming",
+      "Connects up to 3 Devices",
+      "24/7 Basic Support",
+      "Free Standard Router"
+    ]
+  },
+  {
+    "id": "pkg-20mbps",
+    "name": "Home Plus",
+    "speed": "20 Mbps",
+    "price": 3499,
+    "currency": "KSh",
+    "period": "month",
+    "popular": true,
+    "features": [
+      "Unlimited High-Speed Data",
+      "Smooth 4K Ultra HD Streaming",
+      "Connects up to 6 Devices",
+      "Priority Technical Support",
+      "Free Dual-Band Router"
+    ]
+  },
+  {
+    "id": "pkg-50mbps",
+    "name": "Pro Ultra",
+    "speed": "50 Mbps",
+    "price": 5499,
+    "currency": "KSh",
+    "period": "month",
+    "popular": false,
+    "features": [
+      "Unlimited Ultra-Fast Bandwidth",
+      "Low Latency Online Gaming",
+      "Connects 10+ Devices",
+      "Dedicated 24/7 VIP Support",
+      "Free High-Performance Router & Installation"
+    ]
+  }
+]
