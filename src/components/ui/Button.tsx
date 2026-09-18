@@ -7,6 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant
   size?: Size
   fullWidth?: boolean
+  pill?: boolean
   children: ReactNode
 }
 
@@ -14,6 +15,7 @@ export default function Button({
   variant = 'primary',
   size = 'md',
   fullWidth = false,
+  pill = false,
   className = '',
   children,
   ...rest
@@ -23,6 +25,7 @@ export default function Button({
     `btn--${variant}`,
     `btn--${size}`,
     fullWidth ? 'btn--full' : '',
+    pill ? 'btn--pill' : '',
     className,
   ].filter(Boolean).join(' ')
 
