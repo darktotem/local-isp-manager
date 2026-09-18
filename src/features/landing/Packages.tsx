@@ -1,15 +1,12 @@
-
+import Button from '../../components/ui/Button';
 import packagesData from '../../data/packages.json';
 import '../../styles/Packages.css';
 
-
-export interface InternetPackage {
-  id: string;
+export interface PackagePlan {
+  id: number;
   name: string;
   speed: string;
-  price: number;
-  currency: string;
-  period: string;
+  price: string;
   popular?: boolean;
   features: string[];
 }
@@ -21,27 +18,25 @@ export const Packages = () => {
         <div className="pricing-header">
           <span className="pricing-badge">PRICING PLANS</span>
           <h2 className="pricing-title">Choose Your Internet Package</h2>
-          <p className="pricing-subtitle">Unlimited high-speed fiber internet with no hidden charges.</p>
         </div>
 
         <div className="pricing-grid">
-          {packagesData?.map((pkg: any) => (
-            <div 
-              key={pkg.id || pkg.name} 
+          {packagesData?.map((pkg: any)  => (
+            <div
+              key={pkg.id}
               className={`pricing-card ${pkg.popular ? 'pricing-card--popular' : ''}`}
             >
               {pkg.popular && <div className="popular-pill">MOST POPULAR</div>}
-              
-              <div className="plan-icon-badge">{pkg.name.charAt(0)}</div>
+
               <h3 className="plan-name">{pkg.name}</h3>
               <div className="plan-speed">{pkg.speed}</div>
 
               <div className="plan-price-box">
                 <span className="plan-price">{pkg.price}</span>
-                <span className="plan-period">/ month</span>
+                <span className="plan-period">/mo</span>
               </div>
 
-              <ul className="plan-features">
+               <ul className="plan-features">
                 {pkg.features?.map((feat: string, idx: number) => (
                   <li key={idx} className="feature-item">
                     <span className="check-icon">✓</span>
@@ -50,9 +45,16 @@ export const Packages = () => {
                 ))}
               </ul>
 
-              <button className="btn-send-message" style={{ marginTop: '1.5rem' }}>
-                Subscribe Now
-              </button>
+              {/* Reusable Button component */}
+              <div className="plan-action">
+                <Button
+                  variant={pkg.popular ? 'primary' : 'outlined'}
+                  fullWidth
+                  pill
+                >
+                  Get started
+                </Button>
+              </div>
             </div>
           ))}
         </div>
