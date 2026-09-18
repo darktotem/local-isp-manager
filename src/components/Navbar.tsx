@@ -1,8 +1,6 @@
 
 //Global Navigation Bar with (logo, navigation links[Get Connected, about, contact], and user profile options [login, signup]
-
 import { useState } from 'react';
-import './Navbar.css';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +16,12 @@ export const Navbar = () => {
   return (
     <header className="navbar-header">
       <nav className="navbar-container">
+
         {/* Brand / Logo Placeholder */}
         <div className="nav-brand">
           <a href="/" onClick={closeMenu}>
             <span className="brand-logo-icon">⚡</span>
-            <span className="brand-name">NetConnect</span>
+            <span className="brand-name">Local Network</span>
           </a>
         </div>
 

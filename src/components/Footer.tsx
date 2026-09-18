@@ -1,5 +1,4 @@
 //Global Footer with contact information, social media links, and copyright notice
-import './Footer.css';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,12 +13,11 @@ export const Footer = () => {
             <span className="brand-name">Local Network</span>
           </div>
           <p className="brand-tagline">
-            High-speed, reliable fiber internet connections for businesses and residences.
+            High-speed, reliable home fibre internet for everyone. Stay connected with Local Network.
           </p>
           <div className="hours-block">
             <strong>Operational Hours:</strong>
             <p>Mon-Fri: 8:00 AM-6:00 PM</p>
-            <p>Sat-Sun: 9:00 AM-3:00 PM</p>
           </div>
         </div>
 
