@@ -16,7 +16,6 @@ export const Navbar = () => {
         {/* Brand / Logo */}
         <div className="nav-brand">
           <a href="/" onClick={closeMenu} className="brand-link">
-            <span className="brand-logo-icon">⚡</span>
             <span className="brand-name">Local Network</span>
           </a>
         </div>
