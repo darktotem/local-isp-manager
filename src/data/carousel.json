@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "badge": "High-Speed Fiber Network",
+    "headline": "Fast, Reliable & Unlimited Internet for Your Home",
+    "subheadline": "Experience buffer-free 4K streaming, low-latency gaming, and lightning-fast downloads with flexible monthly subscriptions.",
+    "ctaText": "Get Connected",
+    "ctaLink": "#packages",
+    "image": "https://www.google.com/imgres?q=fibre%20connection%20services&imgurl=https%3A%2F%2Fconnectedhsp.com%2Fwp-content%2Fuploads%2F2026%2F05%2FAn-engineer-installing-a-new-fibre-circuit-into-a-building-1024x851.png&imgrefurl=https%3A%2F%2Fconnectedhsp.com%2Fsolutions%2Fbroadband-fibre-connectivity%2F&docid=TH5z3y8fpCK1nM&tbnid=uG5gDT3QnRt5qM&vet=12ahUKEwiN55fP5fiWAxXH_rsIHSfoN0YQnPAOegUI3gUQAA..i&w=1024&h=851&hcb=2&ved=2ahUKEwiN55fP5fiWAxXH_rsIHSfoN0YQnPAOegUI3gUQAA"
+  },
+  {
+    "id": 2,
+    "badge": "Dedicated Business Bandwidth",
+    "headline": "Empower Your Business with Guaranteed Speeds",
+    "subheadline": "Uninterrupted enterprise fiber connections, 99.9% uptime SLA, and 24/7 dedicated local technical support.",
+    "ctaText": "Explore Business Plans",
+    "ctaLink": "#packages"
+  },
+  {
+    "id": 3,
+    "badge": "Community Coverage Expansion",
+    "headline": "Seamless Connectivity Across the Entire Region",
+    "subheadline": "Check coverage in your neighborhood and get installed in as little as 24 hours with zero hidden setup fees.",
+    "ctaText": "Check Coverage",
+    "ctaLink": "#coverage"
+  }
+]
